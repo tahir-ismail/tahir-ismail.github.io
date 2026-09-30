@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tahir Ismail, a second-year Application Development student at Emeris with job-shadowing experience at Wirk.">
+  <meta name="theme-color" content="#f3f3f1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tahir Ismail | Application Development Student">
+  <meta property="og:description" content="Second-year Application Development student at Emeris. Job-shadowing placement at Wirk, selected projects, and skills.">
+  <title>Tahir Ismail | Application Development Student</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23151515'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='800' font-size='30' fill='%23f3f3f1'%3ETI%3C/text%3E%3Crect x='44' y='44' width='8' height='8' fill='%23e5532b'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply a saved dark-mode choice before first paint so the page doesn't flash white. Light is the default.
+    try { if (localStorage.getItem('theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#top" aria-label="Tahir Ismail home">TI<span aria-hidden="true"></span></a>
+      <div class="nav-tools">
+        <button class="theme-toggle" type="button" aria-pressed="false">Dark</button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#shadowing">Job shadowing</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a class="nav-contact" href="#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="scroll-sentinel" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <section class="hero container" aria-labelledby="hero-title">
+      <a class="hero-note" href="#shadowing">Just back from a week shadowing software engineers at Wirk <span aria-hidden="true">↘</span></a>
+
+      <h1 id="hero-title" class="hero-name">
+        <span class="line"><span class="word">Tahir</span></span>
+        <span class="line"><span class="word">Ismail<i aria-hidden="true">.</i></span></span>
+      </h1>
+
+      <div class="hero-foot">
+        <p class="hero-text">Second-year Application Development student. I build for the web and like working out how whole systems fit together.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">See my work</a>
+          <a class="button button-secondary" href="mailto:tahir.pe@gmail.com">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about container" id="about" aria-labelledby="about-title">
+      <figure class="about-photo reveal">
+        <!-- Drop a photo named photo.jpg (portrait, roughly 4:5) into this folder and it will appear here. -->
+        <img src="photo.jpg" alt="Portrait of Tahir Ismail" width="800" height="1000" loading="lazy" onerror="this.parentElement.classList.add('is-empty'); this.remove();">
+        <span class="about-photo-fallback" aria-hidden="true">TI</span>
+      </figure>
+      <div class="about-copy reveal">
+        <h2 id="about-title">I like understanding how things work, then figuring out how to make them work better.</h2>
+        <p>I'm studying towards a Bachelor of Computer and Information Sciences in Application Development at Emeris, building a foundation in programming, web and mobile development, and database design. Outside class I'm usually trying a new framework, refining a side project or solving one more coding challenge.</p>
+        <p>I'm looking for chances to learn from experienced teams, contribute to real products and grow into a well-rounded software engineer.</p>
+        <dl class="about-facts">
+          <div><dt>Studying</dt><dd>BCIS Application Development</dd></div>
+          <div><dt>Year</dt><dd>Second</dd></div>
+          <div><dt>Placement</dt><dd>Wirk, July 2026</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section shadowing" id="shadowing" aria-labelledby="shadowing-title">
+      <div class="container">
+        <h2 id="shadowing-title" class="section-title reveal">A week inside a real software team.</h2>
+
+        <div class="bento">
+          <article class="cell cell-intro reveal">
+            <p class="wirk-mark" aria-label="Wirk">w<span>i</span>rk</p>
+            <p class="cell-meta">13 to 17 July 2026 · Port Elizabeth</p>
+            <p>Four days with four different teams, working alongside practising engineers on real production work. On Friday I presented what I had learned to the project manager who ran the week.</p>
+            <a class="text-link" href="Reference%20for%20Tahir%20Ismail%20-%20Student%20Shadow%20Week%20Placement.pdf" target="_blank" rel="noopener" data-letter>Read my reference letter <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <figure class="cell cell-quote reveal">
+            <blockquote>
+              <p>“He went into great detail for each day's task and exceeded my expectations across the board.”</p>
+            </blockquote>
+            <figcaption>Ashley Mullins<br>Project Manager, Wirk</figcaption>
+          </figure>
+
+          <div class="cell cell-stats reveal">
+            <dl>
+              <div><dt>Engineers who hosted me</dt><dd>6</dd></div>
+              <div><dt>Teams, one per day</dt><dd>4</dd></div>
+              <div><dt>Rating from every host</dt><dd>4-5<small>/5</small></dd></div>
+            </dl>
+            <p>Every host who was asked said they would have me shadow again.</p>
+          </div>
+
+          <article class="cell cell-day reveal">
+            <p class="cell-meta">Monday · Radio2Radio</p>
+            <h3>Cloud architecture</h3>
+            <p>Worked out why the team chose a cloud architecture over a traditional centralised server, and followed along as they fixed real bugs.</p>
+            <blockquote>“Very inquisitive and asked questions about all areas of the system.”</blockquote>
+            <p class="cell-rating">Host rating 4/5</p>
+          </article>
+          <article class="cell cell-day reveal">
+            <p class="cell-meta">Tuesday · RTS Cloud</p>
+            <h3>Root-cause analysis</h3>
+            <p>Mapped the root-cause analysis steps on a complex, high-volume project, including the real-world safety risk of a faulty part reaching a vehicle.</p>
+            <blockquote>“When we explained complex problems to him, he tried to relay them back to concepts he was familiar with.”</blockquote>
+            <p class="cell-rating">Host rating 5/5</p>
+          </article>
+          <article class="cell cell-day reveal">
+            <p class="cell-meta">Wednesday · Spec Driven Development</p>
+            <h3>Spec-driven AI development</h3>
+            <p>Saw how a written spec shapes what an AI coding agent builds, and why spec quality matters more when you're directing tools like Claude.</p>
+            <blockquote>“Good listener. Took ample notes.”</blockquote>
+            <p class="cell-rating">Host rating 4/5</p>
+          </article>
+          <article class="cell cell-day reveal">
+            <p class="cell-meta">Thursday · Link Disc Golf</p>
+            <h3>Hardware to software</h3>
+            <p>Traced physics-engine and hardware logic through to the software entitlement decisions built on top of it, working independently.</p>
+            <blockquote>“Great attitude: positive, enthusiastic, and easy to speak to.”</blockquote>
+            <p class="cell-rating">Host rating 5/5</p>
+          </article>
+
+          <article class="cell cell-outcome reveal">
+            <p class="cell-meta">Friday · Final review</p>
+            <h3>Architecture and systems thinking came out as my strongest area.</h3>
+            <p>I turned my notes, technical analysis and reflections into a final presentation. Its structure and my systems thinking across teams were both rated 5/5.</p>
+          </article>
+
+          <article class="cell cell-takeaway reveal">
+            <p class="cell-meta">What I'm working on</p>
+            <h3>Ask why first, write it down second.</h3>
+            <p>In fast, dense sessions my instinct was to capture everything in notes. Next time I'll restate the idea in my own words and ask “why this approach?” before I write it down.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="section-title reveal">Projects</h2>
+
+        <ol class="work-list">
+          <li class="work-row reveal">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <h3>Skyline Weather</h3>
+              <p>Weather dashboard with location search, live conditions and a five-day forecast.</p>
+              <ul class="tag-list"><li>JavaScript</li><li>REST API</li><li>CSS</li></ul>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li class="work-row reveal">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <h3>FocusFlow</h3>
+              <p>Distraction-free task manager for planning study sessions and tracking progress.</p>
+              <ul class="tag-list"><li>React</li><li>Local Storage</li></ul>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li class="work-row reveal">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <h3>Campus Insights</h3>
+              <p>Turns anonymised student survey data into clear, useful charts.</p>
+              <ul class="tag-list"><li>Python</li><li>Pandas</li><li>SQL</li></ul>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li class="work-row reveal">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <h3>Library Ledger</h3>
+              <p>Relational library system for cataloguing books, members, loans and returns.</p>
+              <ul class="tag-list"><li>Java</li><li>MySQL</li><li>JDBC</li></ul>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li class="work-row reveal">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <h3>Maze Runner</h3>
+              <p>Pathfinding game that compares breadth-first and depth-first search.</p>
+              <ul class="tag-list"><li>C++</li><li>Algorithms</li></ul>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li class="work-row reveal">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <h3>PocketWise</h3>
+              <p>Budget tracker concept to help students understand their spending.</p>
+              <ul class="tag-list"><li>HTML</li><li>JavaScript</li><li>UX</li></ul>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title" class="section-title reveal">Toolkit</h2>
+      </div>
+      <div class="marquee reveal">
+        <ul class="marquee-track">
+          <li>JavaScript</li><li>Python</li><li>Java</li><li>C++</li><li>HTML</li><li>CSS</li><li>React</li><li>REST APIs</li><li>MySQL</li><li>PostgreSQL</li><li>SQLite</li><li>Data modelling</li><li>Git</li><li>VS Code</li><li>Figma</li><li>Linux</li>
+        </ul>
+        <ul class="marquee-track" aria-hidden="true">
+          <li>JavaScript</li><li>Python</li><li>Java</li><li>C++</li><li>HTML</li><li>CSS</li><li>React</li><li>REST APIs</li><li>MySQL</li><li>PostgreSQL</li><li>SQLite</li><li>Data modelling</li><li>Git</li><li>VS Code</li><li>Figma</li><li>Linux</li>
+        </ul>
+      </div>
+      <p class="container learning reveal">Currently learning <strong>TypeScript</strong>, <strong>Node.js</strong> and <strong>cloud fundamentals</strong>.</p>
+    </section>
+
+    <section class="section education" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <h2 id="education-title" class="section-title reveal">Education</h2>
+        <div class="edu-grid">
+          <article class="edu-item is-current reveal">
+            <p class="edu-year">2025-now</p>
+            <h3>BCIS in Application Development</h3>
+            <p>Emeris (an IIE qualification). Currently in second year.</p>
+            <ul class="tag-list"><li>Programming</li><li>Web development</li><li>Mobile apps</li><li>Database design</li></ul>
+          </article>
+          <article class="edu-item reveal">
+            <p class="edu-year">2025</p>
+            <h3>First year completed</h3>
+            <p>Completed the first year of my BCIS in Application Development at Emeris.</p>
+          </article>
+          <article class="edu-item reveal">
+            <p class="edu-year">2024</p>
+            <h3>National Senior Certificate</h3>
+            <p>High school, with a focus on IT and business.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="contact-title reveal">Open to internships, projects and good conversations about tech.</h2>
+        <a class="contact-email reveal" href="mailto:tahir.pe@gmail.com">tahir.pe@gmail.com<span aria-hidden="true">↗</span></a>
+        <div class="contact-actions reveal">
+          <a class="button button-secondary" href="https://www.linkedin.com/in/tahir-ismail-a61596384" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year">2026</span> Tahir Ismail</p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/tahir-ismail-a61596384" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="#top">Back to top <span aria-hidden="true">↑</span></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <dialog class="letter-viewer" aria-labelledby="letter-title">
+    <div class="letter-bar">
+      <p id="letter-title">Reference letter · Wirk</p>
+      <div class="letter-actions">
+        <a class="letter-download" href="Reference%20for%20Tahir%20Ismail%20-%20Student%20Shadow%20Week%20Placement.pdf" download>Download PDF</a>
+        <button class="letter-close" type="button">Close</button>
+      </div>
+    </div>
+    <div class="letter-pages" aria-live="polite"><p class="letter-status">Loading letter…</p></div>
+  </dialog>
+</body>
+</html>

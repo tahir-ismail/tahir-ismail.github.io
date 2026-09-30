@@ -1,0 +1,9 @@
+# Local tooling and scratch folders: never publish these
+.claude/
+.agents/
+tmp/
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store
