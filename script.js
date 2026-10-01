@@ -141,9 +141,26 @@ letterLink.addEventListener('click', async (event) => {
   letterViewer.showModal();
   document.body.classList.add('letter-open');
   if (letterRendered) return;
+  // Safety net: if rendering stalls (e.g. the browser pauses drawing), offer the PDF directly instead of spinning forever.
+  const stallTimer = setTimeout(() => {
+    if (letterRendered) return;
+    const status = document.createElement('p');
+    status.className = 'letter-status';
+    status.append('This is taking longer than expected. ');
+    const direct = document.createElement('a');
+    direct.href = letterLink.href;
+    direct.target = '_blank';
+    direct.rel = 'noopener';
+    direct.className = 'text-link';
+    direct.textContent = 'Open the PDF instead';
+    status.append(direct);
+    letterPages.replaceChildren(status);
+  }, 10000);
   try {
     await renderLetter();
+    clearTimeout(stallTimer);
   } catch (error) {
+    clearTimeout(stallTimer);
     closeLetter();
     window.open(letterLink.href, '_blank', 'noopener') || (window.location.href = letterLink.href);
   }
