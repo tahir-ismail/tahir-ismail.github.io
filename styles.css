@@ -181,8 +181,13 @@ p { margin: 0; text-wrap: pretty; }
 .skills { border-top: 1px solid var(--line); overflow: hidden; }
 .marquee { display: flex; width: max-content; border-block: 1px solid var(--line); }
 .marquee-track { display: flex; flex-shrink: 0; }
-.marquee-track li { font: 700 clamp(2rem, 5vw, 4.2rem)/1 var(--display); letter-spacing: -.035em; padding: 28px clamp(20px, 2.5vw, 36px); white-space: nowrap; display: flex; align-items: center; gap: clamp(20px, 2.5vw, 36px); }
-.marquee-track li::after { content: ""; width: 10px; height: 10px; background: var(--accent); }
+.marquee-track li { font: 700 clamp(2rem, 5vw, 4.2rem)/1 var(--display); letter-spacing: -.035em; padding: 28px clamp(20px, 2.5vw, 36px); white-space: nowrap; display: flex; align-items: center; gap: .3em; }
+.marquee-track li::after { content: ""; width: 10px; height: 10px; background: var(--accent); margin-left: clamp(20px, 2.5vw, 36px); flex-shrink: 0; }
+/* Tool logos: greyscale to match the page, full brand colour on hover. Logos from Devicon (MIT); concept icons from Phosphor (MIT). */
+.marquee-track li img { width: .8em; height: .8em; flex-shrink: 0; object-fit: contain; filter: grayscale(1) contrast(1.15); opacity: .85; transition: filter .35s var(--ease), opacity .35s, transform .35s var(--ease); }
+.marquee-track li:hover img { filter: none; opacity: 1; transform: scale(1.08); }
+.marquee-track li img.mono { filter: none; opacity: .9; }
+:root[data-theme="dark"] .marquee-track li img.mono { filter: invert(1); }
 @media (prefers-reduced-motion: no-preference) {
   .marquee-track { animation: marquee 45s linear infinite; }
   .marquee:hover .marquee-track { animation-play-state: paused; }
