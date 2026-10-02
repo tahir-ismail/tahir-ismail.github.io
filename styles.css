@@ -116,8 +116,8 @@ p { margin: 0; text-wrap: pretty; }
 /* About: photo + copy split */
 .about { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(32px, 6vw, 96px); align-items: start; border-top: 1px solid var(--line); }
 .about-photo { margin: 0; position: relative; aspect-ratio: 4 / 5; background: var(--surface); overflow: hidden; }
-.about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) contrast(1.05); transition: filter .6s var(--ease); }
-.about-photo:hover img { filter: none; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; transition: transform .8s var(--ease); }
+.about-photo:hover img { transform: scale(1.03); }
 .about-photo-fallback { display: none; }
 .about-photo.is-empty .about-photo-fallback { position: absolute; inset: 0; display: grid; place-items: center; font: 800 clamp(6rem, 16vw, 14rem)/1 var(--display); letter-spacing: -.06em; color: var(--bg); background: var(--text); }
 .about-copy { padding-top: 8px; }
