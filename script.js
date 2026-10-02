@@ -57,7 +57,9 @@ if ('IntersectionObserver' in window) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
+  // Reveal once an element's top edge is 10% up from the bottom of the screen. Using a margin
+  // rather than a % of the element keeps very wide elements (the toolkit strip) from never triggering.
+  }, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
   reveals.forEach((element) => revealObserver.observe(element));
 } else {
   reveals.forEach((element) => element.classList.add('visible'));
