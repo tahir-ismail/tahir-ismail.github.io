@@ -98,7 +98,7 @@ p { margin: 0; text-wrap: pretty; }
 .hero-name .word { display: inline-block; }
 .hero-name i { color: var(--accent); font-style: normal; }
 .hero-foot { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; align-items: end; }
-.hero-text { grid-column: 1 / span 5; font-size: clamp(1.1rem, 1.5vw, 1.3rem); line-height: 1.5; max-width: 38ch; }
+.hero-text { grid-column: 1 / span 6; font-size: clamp(1.1rem, 1.5vw, 1.3rem); line-height: 1.5; max-width: 46ch; }
 .hero-actions { grid-column: 8 / -1; display: flex; gap: 12px; justify-content: flex-end; flex-wrap: wrap; }
 
 @media (prefers-reduced-motion: no-preference) {
