@@ -188,7 +188,7 @@ p { margin: 0; text-wrap: pretty; }
   .marquee:hover .marquee-track { animation-play-state: paused; }
 }
 @keyframes marquee { to { transform: translateX(-100%); } }
-.learning { margin-top: 40px; font-size: clamp(1.1rem, 1.6vw, 1.35rem); color: var(--muted); }
+.learning { margin-top: 24px; font-size: clamp(1.1rem, 1.6vw, 1.35rem); color: var(--muted); }
 .learning strong { color: var(--text); font-weight: 700; }
 
 /* Education: three columns */
